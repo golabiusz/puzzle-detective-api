@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Puzzle Detective API" default="build">
+    <target name="build">
+        <phingcall target="phpunit"></phingcall>
+    </target>
+    <target name="build-light">
+        <phingcall target="phpunit-light"></phingcall>
+    </target>
+    <target name="phpunit" description="Run unit and functional tests with PHPUnit and generate report">
+        <exec executable="php" passthru="true">
+            <arg value="vendor/bin/phpunit" />
+            <arg line="-c phpunit-all-with-report.xml" />
+        </exec>
+    </target>
+    <target name="phpunit-light" description="Run tests with PHPUnit">
+        <exec executable="php" passthru="true">
+            <arg value="vendor/bin/phpunit" />
+            <arg line="-c phpunit.xml" />
+        </exec>
+    </target>
+
+    <target name="composer" description="Installing dependencies without dev">
+        <exec executable="php" passthru="true" checkreturn="true">
+            <arg value="composer.phar"/>
+            <arg value="install"/>
+            <arg value="--no-dev"/>
+            <arg value="--prefer-dist"/>
+            <arg value="--no-progress"/>
+            <arg value="--optimize-autoloader"/>
+        </exec>
+    </target>
+    <target name="composer-dev" description="Installing dependencies with dev">
+        <exec executable="php" passthru="true" checkreturn="true">
+            <arg value="composer.phar"/>
+            <arg value="install"/>
+            <arg value="--prefer-dist"/>
+            <arg value="--no-progress"/>
+        </exec>
+    </target>
+    <target name="composer-optimize">
+        <exec executable="php" passthru="true" checkreturn="true">
+            <arg value="composer.phar"/>
+            <arg value="dump-autoload"/>
+            <arg value="--optimize"/>
+        </exec>
+    </target>
+
+    <target name="migrations-migrate">
+        <exec executable="php" passthru="true" checkreturn="true">
+            <arg line="bin/console"></arg>
+            <arg line="doctrine:migrations:migrate"></arg>
+            <arg line="--no-interaction"></arg>
+        </exec>
+    </target>
+
+    <target name="update-dev"
+            depends="cache-clean,composer-dev,composer-optimize,migrations-migrate"
+            description="Aktualizacja wersji dev">
+    </target>
+    <target name="update-production"
+            depends="cache-clean,composer,migrations-migrate"
+            description="Aktualizacja wersji produkcujnej">
+    </target>
+
+    <target name="cache-clean">
+        <delete includeemptydirs="true">
+            <fileset dir="var/cache">
+                <exclude name=".gitignore" />
+                <exclude name=".gitkeep" />
+            </fileset>
+        </delete>
+    </target>
+</project>

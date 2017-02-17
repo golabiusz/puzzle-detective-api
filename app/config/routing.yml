@@ -1,0 +1,4 @@
+puzzle_detective_app:
+    resource: "@PuzzleDetectiveAppBundle/Resources/config/routing.xml"
+    prefix:   /
+
