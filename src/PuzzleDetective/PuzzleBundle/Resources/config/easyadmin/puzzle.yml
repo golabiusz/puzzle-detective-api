@@ -1,0 +1,20 @@
+easy_admin:
+    entities:
+        Puzzle:
+            class: PuzzleDetective\PuzzleBundle\Entity\Puzzle
+            form:
+                fields:
+                    - 'name'
+                    - { property: 'description', type: 'ckeditor' }
+                    - { property: 'information', type: 'ckeditor' }
+            list:
+                fields:
+                    - 'id'
+                    - 'name'
+                    - { property: 'description', type: 'raw' }
+                sort: 'createdAt'
+            search:
+                fields: ['id', 'name', 'description']
+            show:
+                fields: ['id', 'name', 'description', 'information', 'createdAt', 'updatedAt']
+#            translation_domain: messages

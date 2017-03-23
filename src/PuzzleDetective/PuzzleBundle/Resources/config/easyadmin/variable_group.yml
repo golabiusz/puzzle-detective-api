@@ -1,0 +1,15 @@
+easy_admin:
+    entities:
+        VariableGroup:
+            class: PuzzleDetective\PuzzleBundle\Entity\VariableGroup
+            form:
+                fields:
+                    - "name"
+                    - "puzzle"
+                    - "position"
+            list:
+                fields: ["id", "name"]
+                sort: ["position", "ASC"]
+            search:
+                fields: ["id", "name"]
+                sort: ["position", "ASC"]

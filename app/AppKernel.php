@@ -17,8 +17,10 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             // PuzzleDetective bundles
             new PuzzleDetective\AppBundle\PuzzleDetectiveAppBundle(),
+            new PuzzleDetective\PuzzleBundle\PuzzleDetectivePuzzleBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="">
+        <body>
+            <!--general-->
+            <trans-unit id="ID">
+                <source>ID</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="Name">
+                <source>Name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+            <trans-unit id="Description">
+                <source>Description</source>
+                <target>Opis</target>
+            </trans-unit>
+            <trans-unit id="Created at">
+                <source>Created at</source>
+                <target>Utworzono</target>
+            </trans-unit>
+            <trans-unit id="Updated at">
+                <source>Updated at</source>
+                <target>Zaktualizowano</target>
+            </trans-unit>
+            <!--puzzle-->
+            <trans-unit id="Puzzle">
+                <source>Puzzle</source>
+                <target>Łamigłówka</target>
+            </trans-unit>
+            <trans-unit id="Information">
+                <source>Information</source>
+                <target>Wskazówki</target>
+            </trans-unit>
+            <trans-unit id="Variable groups">
+                <source>Variable groups</source>
+                <target>Grupy zmiennych</target>
+            </trans-unit>
+            <!--variable group-->
+            <trans-unit id="VariableGroup">
+                <source>VariableGroup</source>
+                <target>Grupa zmiennych</target>
+            </trans-unit>
+            <!--variable-->
+            <trans-unit id="Variable">
+                <source>Variable</source>
+                <target>Zmienna</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+
