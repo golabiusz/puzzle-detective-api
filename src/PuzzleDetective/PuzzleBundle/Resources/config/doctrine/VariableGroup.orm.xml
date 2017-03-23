@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:gedmo="http://gediminasm.org/schemas/orm/doctrine-extensions-mapping"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="PuzzleDetective\PuzzleBundle\Entity\VariableGroup"
+            table="puzzle_variablegroup"
+            repository-class="PuzzleDetective\PuzzleBundle\Repository\VariableGroupRepository">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+            <options>
+                <option name="unsigned">true</option>
+            </options>
+        </id>
+
+        <field name="name" column="name" type="string" length="255" nullable="false"/>
+        <field name="position" column="position" type="integer" nullable="false">
+            <options>
+                <option name="comment">The position of group inside puzzle.</option>
+                <option name="default">0</option>
+            </options>
+        </field>
+        <field name="createdAt" column="created_at" type="datetime" nullable="true">
+            <gedmo:timestampable on="create"/>
+        </field>
+        <field name="updatedAt" column="updated_at" type="datetime" nullable="true">
+            <gedmo:timestampable on="update"/>
+        </field>
+
+        <one-to-many field="variables" target-entity="Variable" mapped-by="variableGroup">
+            <cascade>
+                <cascade-persist/>
+                <cascade-remove/>
+            </cascade>
+            <order-by>
+                <order-by-field name="position" direction="ASC"/>
+            </order-by>
+        </one-to-many>
+        <many-to-one field="puzzle" target-entity="Puzzle" inversed-by="variableGroups">
+            <join-column name="puzzle_id" referenced-column-name="id" nullable="false"/>
+        </many-to-one>
+    </entity>
+</doctrine-mapping>
