@@ -5,17 +5,17 @@
             <!--puzzle-->
             <trans-unit id="Puzzle">
                 <source>Puzzle</source>
-                <target>Łamigłówka</target>
+                <target>Puzzle</target>
             </trans-unit>
             <!--variable group-->
             <trans-unit id="VariableGroup">
                 <source>VariableGroup</source>
-                <target>Grupa zmiennych</target>
+                <target>Variable Group</target>
             </trans-unit>
             <!--variable-->
             <trans-unit id="Variable">
                 <source>Variable</source>
-                <target>Zmienna</target>
+                <target>Variable</target>
             </trans-unit>
         </body>
     </file>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="">
+        <body>
+            <!-- generic actions displayed on buttons and links -->
+            <trans-unit id="action.new">
+                <source>action.new</source>
+                <target>Dodaj</target>
+            </trans-unit>
+            <trans-unit id="action.show">
+                <source>action.show</source>
+                <target>Pokaż</target>
+            </trans-unit>
+            <trans-unit id="action.edit">
+                <source>action.edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+            <trans-unit id="action.search">
+                <source>action.search</source>
+                <target>Szukaj</target>
+            </trans-unit>
+            <trans-unit id="action.delete">
+                <source>action.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="action.save">
+                <source>action.save</source>
+                <target>Zapisz zmiany</target>
+            </trans-unit>
+            <trans-unit id="action.cancel">
+                <source>action.cancel</source>
+                <target>Anuluj</target>
+            </trans-unit>
+            <trans-unit id="action.list">
+                <source>action.list</source>
+                <target>Wróć do listy</target>
+            </trans-unit>
+            <trans-unit id="label.form.empty_value">
+                <source>label.form.empty_value</source>
+                <target>Pusta wartość</target>
+            </trans-unit>
+            <!--general-->
+            <trans-unit id="ID">
+                <source>ID</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="Name">
+                <source>Name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+            <trans-unit id="Description">
+                <source>Description</source>
+                <target>Opis</target>
+            </trans-unit>
+            <trans-unit id="Position">
+                <source>Position</source>
+                <target>Pozycja</target>
+            </trans-unit>
+            <trans-unit id="Created at">
+                <source>Created at</source>
+                <target>Utworzono</target>
+            </trans-unit>
+            <trans-unit id="Updated at">
+                <source>Updated at</source>
+                <target>Zaktualizowano</target>
+            </trans-unit>
+            <!--puzzle-->
+            <trans-unit id="Puzzles">
+                <source>Puzzles</source>
+                <target>Łamigłówki</target>
+            </trans-unit>
+            <trans-unit id="Puzzle">
+                <source>Puzzle</source>
+                <target>Łamigłówka</target>
+            </trans-unit>
+            <trans-unit id="Information">
+                <source>Information</source>
+                <target>Wskazówki</target>
+            </trans-unit>
+            <trans-unit id="Variable groups">
+                <source>Variable groups</source>
+                <target>Grupy zmiennych</target>
+            </trans-unit>
+            <!--variable group-->
+            <trans-unit id="VariableGroup">
+                <source>VariableGroup</source>
+                <target>Grupa zmiennych</target>
+            </trans-unit>
+            <!--variable-->
+            <trans-unit id="Variable">
+                <source>Variable</source>
+                <target>Zmienna</target>
+            </trans-unit>
+            <trans-unit id="Variable group">
+                <source>Variable group</source>
+                <target>Grupa zmiennych</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
