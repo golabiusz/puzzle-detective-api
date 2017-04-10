@@ -1,4 +1,5 @@
 imports:
+    - { resource: "@PuzzleDetectiveAppBundle/Resources/config/easyadmin/user.yml" }
     - { resource: "@PuzzleDetectivePuzzleBundle/Resources/config/easyadmin/puzzle.yml" }
     - { resource: "@PuzzleDetectivePuzzleBundle/Resources/config/easyadmin/variable_group.yml" }
     - { resource: "@PuzzleDetectivePuzzleBundle/Resources/config/easyadmin/variable.yml" }
