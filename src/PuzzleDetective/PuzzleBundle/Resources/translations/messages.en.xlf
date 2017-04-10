@@ -6,20 +6,69 @@
                 <source>menu.label.puzzles</source>
                 <target>Puzzles</target>
             </trans-unit>
+            <!--general-->
+            <trans-unit id="ID">
+                <source>ID</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="Name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="Description">
+                <source>Description</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="Position">
+                <source>Position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="Created at">
+                <source>Created at</source>
+                <target>Created at</target>
+            </trans-unit>
+            <trans-unit id="Updated at">
+                <source>Updated at</source>
+                <target>Updated at</target>
+            </trans-unit>
             <!--puzzle-->
             <trans-unit id="menu.label.puzzle">
                 <source>menu.label.puzzle</source>
                 <target>Puzzle</target>
+            </trans-unit>
+            <trans-unit id="Puzzle">
+                <source>Puzzle</source>
+                <target>Puzzle</target>
+            </trans-unit>
+            <trans-unit id="Information">
+                <source>Information</source>
+                <target>Information</target>
+            </trans-unit>
+            <trans-unit id="Variable groups">
+                <source>Variable groups</source>
+                <target>Variable groups</target>
             </trans-unit>
             <!--variable group-->
             <trans-unit id="menu.label.variable_group">
                 <source>menu.label.variable_group</source>
                 <target>Variable Group</target>
             </trans-unit>
+            <trans-unit id="VariableGroup">
+                <source>VariableGroup</source>
+                <target>Variable Group</target>
+            </trans-unit>
             <!--variable-->
             <trans-unit id="menu.label.variable">
                 <source>menu.label.variable</source>
                 <target>Variable</target>
+            </trans-unit>
+            <trans-unit id="Variable">
+                <source>Variable</source>
+                <target>Variable</target>
+            </trans-unit>
+            <trans-unit id="Variable group">
+                <source>Variable group</source>
+                <target>Variable group</target>
             </trans-unit>
         </body>
     </file>

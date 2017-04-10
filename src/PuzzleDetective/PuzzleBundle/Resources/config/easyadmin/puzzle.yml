@@ -2,7 +2,6 @@ easy_admin:
     entities:
         Puzzle:
             class: PuzzleDetective\PuzzleBundle\Entity\Puzzle
-            translation_domain: 'PuzzleDetectivePuzzleBundle'
             form:
                 fields:
                     - 'name'
