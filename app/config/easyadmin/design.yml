@@ -3,7 +3,9 @@ easy_admin:
         brand_color:  '#994db6'
 #        color_scheme: 'light'
         menu:
-            - { label: 'Puzzles' }
-            - 'Puzzle'
-            - 'VariableGroup'
-            - 'Variable'
+            - { label: 'menu.label.puzzles' }
+            - { entity: 'Puzzle', label: 'menu.label.puzzle' }
+            - { entity: 'VariableGroup', label: 'menu.label.variable_group' }
+            - { entity: 'Variable', label: 'menu.label.variable' }
+            - { label: 'menu.label.users' }
+            - { entity: 'User', label: 'menu.label.user' }

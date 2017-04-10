@@ -3,6 +3,9 @@ easy_admin_bundle:
     type:     annotation
     prefix:   /admin
 
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
 puzzle_detective_app:
     resource: "@PuzzleDetectiveAppBundle/Resources/config/routing.xml"
     prefix:   /

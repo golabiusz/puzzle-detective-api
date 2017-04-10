@@ -2,19 +2,23 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="">
         <body>
+            <trans-unit id="menu.label.puzzles">
+                <source>menu.label.puzzles</source>
+                <target>Puzzles</target>
+            </trans-unit>
             <!--puzzle-->
-            <trans-unit id="Puzzle">
-                <source>Puzzle</source>
+            <trans-unit id="menu.label.puzzle">
+                <source>menu.label.puzzle</source>
                 <target>Puzzle</target>
             </trans-unit>
             <!--variable group-->
-            <trans-unit id="VariableGroup">
-                <source>VariableGroup</source>
+            <trans-unit id="menu.label.variable_group">
+                <source>menu.label.variable_group</source>
                 <target>Variable Group</target>
             </trans-unit>
             <!--variable-->
-            <trans-unit id="Variable">
-                <source>Variable</source>
+            <trans-unit id="menu.label.variable">
+                <source>menu.label.variable</source>
                 <target>Variable</target>
             </trans-unit>
         </body>

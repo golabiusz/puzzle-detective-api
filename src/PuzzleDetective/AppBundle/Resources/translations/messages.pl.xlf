@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="">
+        <body>
+            <!--user-->
+            <trans-unit id="menu.label.users">
+                <source>menu.label.users</source>
+                <target>Użytkownicy</target>
+            </trans-unit>
+            <trans-unit id="menu.label.user">
+                <source>menu.label.user</source>
+                <target>Użytkownik</target>
+            </trans-unit>
+            <trans-unit id="User">
+                <source>User</source>
+                <target>Użytkownik</target>
+            </trans-unit>
+            <trans-unit id="Username">
+                <source>Username</source>
+                <target>Nazwa użytkownika</target>
+            </trans-unit>
+            <trans-unit id="Email">
+                <source>Email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="Enabled">
+                <source>Enabled</source>
+                <target>Aktywny?</target>
+            </trans-unit>
+            <trans-unit id="Last login">
+                <source>Last login</source>
+                <target>Data ostatniego logowania</target>
+            </trans-unit>
+            <trans-unit id="Plain password">
+                <source>Plain password</source>
+                <target>Hasło</target>
+            </trans-unit>
+            <trans-unit id="Roles">
+                <source>Roles</source>
+                <target>Role</target>
+            </trans-unit>
+            <trans-unit id="ROLE_USER">
+                <source>ROLE_USER</source>
+                <target>UŻYTKOWNIK</target>
+            </trans-unit>
+            <trans-unit id="ROLE_ADMIN">
+                <source>ROLE_ADMIN</source>
+                <target>ADMINISTRATOR</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

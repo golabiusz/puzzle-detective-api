@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
             // PuzzleDetective bundles
             new PuzzleDetective\AppBundle\PuzzleDetectiveAppBundle(),
             new PuzzleDetective\PuzzleBundle\PuzzleDetectivePuzzleBundle(),
