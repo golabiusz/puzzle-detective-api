@@ -6,20 +6,69 @@
                 <source>menu.label.puzzles</source>
                 <target>Łamigłówki</target>
             </trans-unit>
+            <!--general-->
+            <trans-unit id="ID">
+                <source>ID</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="Name">
+                <source>Name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+            <trans-unit id="Description">
+                <source>Description</source>
+                <target>Opis</target>
+            </trans-unit>
+            <trans-unit id="Position">
+                <source>Position</source>
+                <target>Pozycja</target>
+            </trans-unit>
+            <trans-unit id="Created at">
+                <source>Created at</source>
+                <target>Utworzono</target>
+            </trans-unit>
+            <trans-unit id="Updated at">
+                <source>Updated at</source>
+                <target>Zaktualizowano</target>
+            </trans-unit>
             <!--puzzle-->
             <trans-unit id="menu.label.puzzle">
                 <source>menu.label.puzzle</source>
                 <target>Łamigłówka</target>
+            </trans-unit>
+            <trans-unit id="Puzzle">
+                <source>Puzzle</source>
+                <target>Łamigłówka</target>
+            </trans-unit>
+            <trans-unit id="Information">
+                <source>Information</source>
+                <target>Wskazówki</target>
+            </trans-unit>
+            <trans-unit id="Variable groups">
+                <source>Variable groups</source>
+                <target>Grupy zmiennych</target>
             </trans-unit>
             <!--variable group-->
             <trans-unit id="menu.label.variable_group">
                 <source>menu.label.variable_group</source>
                 <target>Grupa zmiennych</target>
             </trans-unit>
+            <trans-unit id="VariableGroup">
+                <source>VariableGroup</source>
+                <target>Grupa zmiennych</target>
+            </trans-unit>
             <!--variable-->
             <trans-unit id="menu.label.variable">
                 <source>menu.label.variable</source>
                 <target>Zmienna</target>
+            </trans-unit>
+            <trans-unit id="Variable">
+                <source>Variable</source>
+                <target>Zmienna</target>
+            </trans-unit>
+            <trans-unit id="Variable group">
+                <source>Variable group</source>
+                <target>Grupa zmiennych</target>
             </trans-unit>
         </body>
     </file>
