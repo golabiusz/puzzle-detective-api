@@ -13,8 +13,13 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>src/PuzzleDetective/*Bundle/Tests</directory>
+        <testsuite name="Project Functional Test Suite">
+            <directory>src/*Bundle/Tests/Functional</directory>
+            <directory>src/*/*Bundle/Tests/Functional</directory>
+        </testsuite>
+        <testsuite name="Project Unit Test Suite">
+            <directory>src/*Bundle/Tests/Unit</directory>
+            <directory>src/*/*Bundle/Tests/Unit</directory>
         </testsuite>
     </testsuites>
 
@@ -23,8 +28,9 @@
             <directory>src</directory>
             <exclude>
                 <directory>src/*Bundle/Resources</directory>
+                <directory>src/*Bundle/Tests</directory>
                 <directory>src/*/*Bundle/Resources</directory>
-                <directory>src/*/Bundle/*Bundle/Resources</directory>
+                <directory>src/*/*Bundle/Tests</directory>
             </exclude>
         </whitelist>
     </filter>

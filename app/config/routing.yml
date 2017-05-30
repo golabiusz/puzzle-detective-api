@@ -6,6 +6,10 @@ easy_admin_bundle:
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
 puzzle_detective_app:
     resource: "@PuzzleDetectiveAppBundle/Resources/config/routing.xml"
     prefix:   /
@@ -13,3 +17,4 @@ puzzle_detective_app:
 puzzle_detective_puzzle:
     resource: "@PuzzleDetectivePuzzleBundle/Resources/config/routing.xml"
     prefix:   /
+

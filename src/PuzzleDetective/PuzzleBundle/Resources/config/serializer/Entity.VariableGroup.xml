@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="PuzzleDetective\PuzzleBundle\Entity\VariableGroup" exclusion-policy="ALL">
+        <property name="id" serialized-name="id" since-version="1.0" expose="true" />
+        <property name="name" serialized-name="name" since-version="1.0" expose="true" />
+        <property name="variables" serialized-name="variables" since-version="1.0" expose="true" />
+    </class>
+</serializer>
