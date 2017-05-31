@@ -16,5 +16,7 @@
         <prototype namespace="PuzzleDetective\PuzzleBundle\Controller\" resource="../../Controller" public="true">
             <tag name="controller.service_arguments" />
         </prototype>
+
+        <prototype namespace="PuzzleDetective\PuzzleBundle\Interactor\" resource="../../Interactor" public="true" />
     </services>
 </container>
