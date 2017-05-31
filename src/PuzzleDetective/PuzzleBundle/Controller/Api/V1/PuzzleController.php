@@ -11,6 +11,7 @@ use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Routing\ClassResourceInterface;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use PuzzleDetective\PuzzleBundle\Entity\Puzzle;
+use PuzzleDetective\PuzzleBundle\Interactor\Puzzle\GetList;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -35,10 +36,11 @@ class PuzzleController extends FOSRestController implements ClassResourceInterfa
      *   }
      * )
      *
+     * @param GetList $getListInteractor interactor
      * @return Puzzle[]
      */
-    public function cgetAction(): array
+    public function cgetAction(GetList $getListInteractor): array
     {
-        return $this->get('puzzle_detective.puzzle.interactor.puzzle.get_list')->execute();
+        return $getListInteractor->execute();
     }
 }
