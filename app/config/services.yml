@@ -24,11 +24,6 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    # interactors are imported separately to make sure they're public
-    PuzzleDetective\AppBundle\Interactor\:
-        resource: '../../src/PuzzleDetective/AppBundle/Interactor'
-        public: true
-
     # add more services, or override services that need manual wiring
     # PuzzleDetective\AppBundle\Service\ExampleService:
     #     arguments:

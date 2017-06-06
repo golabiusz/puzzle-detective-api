@@ -36,11 +36,10 @@ class PuzzleController extends FOSRestController implements ClassResourceInterfa
      *   }
      * )
      *
-     * @param GetList $getListInteractor interactor
      * @return Puzzle[]
      */
-    public function cgetAction(GetList $getListInteractor): array
+    public function cgetAction(): array
     {
-        return $getListInteractor->execute();
+        return $this->get(GetList::class)->execute();
     }
 }

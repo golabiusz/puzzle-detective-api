@@ -11,12 +11,19 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false" />
 
-        <prototype namespace="PuzzleDetective\PuzzleBundle\" resource="../../*" exclude="../../{Entity,Repository}" />
+        <prototype namespace="PuzzleDetective\PuzzleBundle\"
+                   resource="../../*"
+                   exclude="../../{Entity,Repository,Controller/Api/V1}" />
 
-        <prototype namespace="PuzzleDetective\PuzzleBundle\Controller\" resource="../../Controller" public="true">
+        <prototype namespace="PuzzleDetective\PuzzleBundle\Controller\"
+                   resource="../../Controller"
+                   exclude="../../Controller/Api/V1"
+                   public="true">
             <tag name="controller.service_arguments" />
         </prototype>
 
-        <prototype namespace="PuzzleDetective\PuzzleBundle\Interactor\" resource="../../Interactor" public="true" />
+        <prototype namespace="PuzzleDetective\PuzzleBundle\Interactor\"
+                   resource="../../Interactor"
+                   public="true" />
     </services>
 </container>
