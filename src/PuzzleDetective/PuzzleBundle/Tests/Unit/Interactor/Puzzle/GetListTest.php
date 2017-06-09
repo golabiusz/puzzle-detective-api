@@ -26,7 +26,7 @@ class GetListTest extends KernelTestCase
         parent::setUp();
 
         static::bootKernel();
-        $this->interactor = static::$kernel->getContainer()->get('puzzle_detective.puzzle.interactor.puzzle.get_list');
+        $this->interactor = static::$kernel->getContainer()->get(GetList::class);
     }
 
     /**

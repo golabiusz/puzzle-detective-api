@@ -13,11 +13,11 @@
 
         <prototype namespace="PuzzleDetective\PuzzleBundle\"
                    resource="../../*"
-                   exclude="../../{Entity,Repository,Controller/Api/V1}" />
+                   exclude="../../{Entity,Repository,Controller/Api}" />
 
         <prototype namespace="PuzzleDetective\PuzzleBundle\Controller\"
                    resource="../../Controller"
-                   exclude="../../Controller/Api/V1"
+                   exclude="../../Controller/Api"
                    public="true">
             <tag name="controller.service_arguments" />
         </prototype>
