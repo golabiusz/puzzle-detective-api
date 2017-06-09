@@ -16,7 +16,7 @@ class PuzzleControllerTest extends BaseTestCase
      */
     public function testGetList(): void
     {
-        $this->client->request('GET', '/api/v1/puzzle/puzzles');
+        $this->requestJson('GET', '/api/v1/puzzle/puzzles');
 
         $this->getRequestTest($this->client->getResponse());
     }
