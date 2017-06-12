@@ -1,0 +1,6 @@
+nelmio_api_doc:
+    sandbox:
+        accept_type: application/json;version=1.0
+        request_format:
+            method: accept_header
+            default_format: json
