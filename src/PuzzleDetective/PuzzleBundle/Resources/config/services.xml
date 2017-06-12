@@ -1,12 +1,29 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <container xmlns="http://symfony.com/schema/dic/services"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <imports>
-        <import resource="interactors.xml"/>
         <import resource="repositories.xml"/>
     </imports>
 
+    <services>
+        <defaults autowire="true" autoconfigure="true" public="false" />
+
+        <prototype namespace="PuzzleDetective\PuzzleBundle\"
+                   resource="../../*"
+                   exclude="../../{Entity,Repository,Controller/Api}" />
+
+        <prototype namespace="PuzzleDetective\PuzzleBundle\Controller\"
+                   resource="../../Controller"
+                   exclude="../../Controller/Api"
+                   public="true">
+            <tag name="controller.service_arguments" />
+        </prototype>
+
+        <prototype namespace="PuzzleDetective\PuzzleBundle\Interactor\"
+                   resource="../../Interactor"
+                   public="true" />
+    </services>
 </container>
