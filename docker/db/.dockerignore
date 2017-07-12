@@ -1,0 +1,12 @@
+**/*.log
+**/*.md
+**/*.sql.gz
+**/._*
+**/.DS_Store
+**/.gitignore
+**/Thumbs.db
+.dockerignore
+.env
+.env.dist
+data/
+Dockerfile

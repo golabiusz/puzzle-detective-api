@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  app:
+    container_name: puzzle_detective_api_dev_app
+    environment:
+      - SYMFONY_ENV=dev
+    volumes:
+      - ./:/srv/puzzle-detective-api:rw
+      # This is for assets:install
+      - ./web:/srv/puzzle-detective-api/web:rw
+  db:
+    container_name: puzzle_detective_api_dev_db
+    ports:
+      - 10006:3306
+  nginx:
+    container_name: puzzle_detective_api_dev_nginx
+    ports:
+      - 10080:80
+    volumes:
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./web:/srv/puzzle-detective-api/web:ro
+      - ./var/logs/nginx:/var/log/nginx:rw
