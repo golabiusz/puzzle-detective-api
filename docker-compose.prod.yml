@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  app:
+    container_name: puzzle_detective_api_prod_app
+    environment:
+      - SYMFONY_ENV=prod
+    volumes:
+      # This is for assets:install
+      - ./web:/srv/puzzle-detective-api/web:rw
+  db:
+    container_name: puzzle_detective_api_prod_db
+  nginx:
+    container_name: puzzle_detective_api_prod_nginx
+    volumes:
+      - ./web:/srv/puzzle-detective-api/web:ro
